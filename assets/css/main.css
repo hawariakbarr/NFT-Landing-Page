@@ -2991,3 +2991,229 @@ ol {
     color: #ff6b81;
     background-color: #fff;
 }
+
+.mobile-menu {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 300px;
+    transform: translate(800px, 0);
+    transition: all 0.1s ease-in-out;
+}
+
+.mobile-menu.active {
+    transform: translate(0, 0);
+}
+
+
+/*buttons*/
+
+.panda-btn {
+    padding: 6px 35px 8px 35px;
+    border-radius: 100px;
+    transition: all 0.1s ease-in-out;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.panda-btn:active {
+    transform: scale(1.05) !important;
+}
+
+.btn-low {
+    color: #333;
+    background: #ececec;
+}
+
+.btn-low:hover {
+    background: #ececec;
+}
+
+a.btn-low {
+    color: #333;
+}
+
+.pop {
+    transition: all 0.1s ease-in-out;
+}
+
+.pop:active {
+    transform: scale(1.05) !important;
+}
+
+
+/*nav*/
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / .4);
+    display: none;
+}
+
+#overlay.active {
+    display: block;
+}
+
+section#nav {
+    overflow: visible !important;
+}
+
+.mobile-open-paw {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 43px;
+    right: 30px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.mobile-open-paw:hover {
+    transform: scale(1.05);
+}
+
+.mobile-open-paw:active {
+    transform: scale(1.1);
+}
+
+.mobile-open-paw.active {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 300px;
+    transform: translate(800px, 0);
+    transition: all 0.1s ease-in-out;
+}
+
+.mobile-menu.active {
+    transform: translate(0, 0);
+}
+
+.mobile-menu a {
+    display: block;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.logo img {
+    width: 300px;
+    transition: all 0.1s ease-in-out;
+}
+
+.logo:hover img {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.logo:active img {
+    transform: scale(1.035) rotate(-2deg);
+}
+
+.menu {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    transform: scale(1.03);
+}
+
+.menu a:active {
+    transform: scale(1.035) rotate(2deg);
+}
+
+.menu a.high {
+    color: white;
+    padding: 5px 35px 8px 35px;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.menu .dropdown-item:focus,
+.menu .dropdown-item:hover {
+    color: #1e2125;
+    background-color: unset;
+}
+
+.menu a.dropdown-item {
+    margin: 0 !important;
+}
+
+@media (max-width: 1201px) {
+    .menu a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 993px) {
+    .logo {}
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 993px) {
+    .mobile-open-paw {
+        top: 25px;
+    }
+    .mobile-open-paw.desktop-hide {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+    .logo {
+        top: 20px;
+        left: 20px;
+    }
+    .logo img {
+        width: 160px;
+    }
+    .mobile-open-paw {
+        top: 22px;
+        width: 40px;
+        height: 40px;
+        right: 20px;
+    }
+    .mobile-menu {
+        right: 20px;
+        top: 70px;
+    }
+}
+
+@media (max-width: 577px) {
+    .mobile-menu {
+        width: calc(100% - 40px);
+    }
+}
+
+.overlay.active {
+    display: block;
+}

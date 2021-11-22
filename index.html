@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body class="overlay">
     <!--[if lte IE 9]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
@@ -47,10 +47,21 @@
                     <div class="nav-inner">
                         <!-- Start Navbar -->
                         <nav class="navbar navbar-expand-lg">
+                            <div class="mobile-open-paw js-toggle-menu desktop-hide">
+                                <img src="https://dirtypanda.io/img/menu-open.svg" class="w-100 closed">
+                            </div>
+                            <div class="mobile-menu">
+                                <a href="#story" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Story</a>
+                                <a href="#attributes" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Attributes</a>
+                                <a href="#roadmap" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Roadmap</a>
+                                <a href="#faq" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">FAQs</a>
+                                <a href="#team" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Team</a>
+
+                            </div>
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/logo/white-logo.svg" alt="Logo">
                             </a>
-                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
@@ -506,6 +517,7 @@
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         //====== counter up 
@@ -517,6 +529,11 @@
             append: " ",
         });
         cu.start();
+
+        $(document).ready(function() {
+            dirtyPandaUi();
+            dirtyPandaTraits();
+        })
     </script>
 </body>
 
