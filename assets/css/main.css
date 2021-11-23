@@ -3272,3 +3272,16 @@ a.btn-low {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+
+/* FAQ CSS */
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item .question {}
+
+.faq-item .answer {
+    opacity: .5;
+}
