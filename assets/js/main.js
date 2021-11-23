@@ -1,8 +1,3 @@
-/*
-Template Name: Appvilla - Creative Landing Page HTML Template.
-Author: GrayGrids
-*/
-
 (function() {
     //===== Prealoder
 
@@ -104,14 +99,6 @@ Author: GrayGrids
             this.classList.add("active");
         };
     };
-
-    //===== mobile-menu-btn
-    // let navbarToggler = document.querySelector(".mobile-menu-btn");
-    // navbarToggler.addEventListener('click', function() {
-    //     navbarToggler.classList.toggle("active");
-    // });
-
-
 })();
 
 
@@ -148,7 +135,7 @@ function dirtyPandaUi() {
 
     $('body').on('click', '.js-toggle-menu', function() {
         var var1 = $(`.mobile-menu`);
-        var var2 = $(`.overlay`);
+        var var2 = $(`#overlay`);
         var var3 = $(`.js-toggle-menu`);
 
         if (!var1.hasClass(`active`)) {
