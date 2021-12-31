@@ -10,34 +10,6 @@
         document.querySelector('.preloader').style.display = 'none';
     }
 
-
-    /*=====================================
-    Sticky
-    ======================================= */
-    // window.onscroll = function() {
-    //     var header_navbar = document.querySelector(".navbar-area");
-    //     var sticky = header_navbar.offsetTop;
-
-    //     var logo = document.querySelector('.navbar-brand img')
-    //     if (window.pageYOffset > sticky) {
-    //         header_navbar.classList.add("sticky");
-    //         logo.src = 'assets/images/logo/logo.svg';
-    //     } else {
-    //         header_navbar.classList.remove("sticky");
-    //         logo.src = 'assets/images/logo/white-logo.svg';
-    //     }
-
-    //     // show or hide the back-top-top button
-    //     var backToTo = document.querySelector(".scroll-top");
-    //     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    //         backToTo.style.display = "flex";
-    //     } else {
-    //         backToTo.style.display = "none";
-    //     }
-    // };
-
-
-
     // section menu active
     function onScroll(event) {
         var sections = document.querySelectorAll('.page-scroll');
@@ -103,7 +75,7 @@
 
 
 
-function dirtyPandaUi() {
+function capyBaraUI() {
 
     var scrollPos = 0;
 
@@ -165,3 +137,35 @@ function dirtyPandaUi() {
         }
     });
 }
+
+$(function() {
+    var current_pos;
+
+    $("#carousel").owlCarousel({
+        items: 1,
+        mouseDrag: false,
+        touchDrag: false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        nav: true,
+        navText: ["", ""],
+        dots: true,
+        onInitialized: function(e) {
+            current_pos = e.item.index;
+        },
+        onTranslate: function(e) {
+            var direction = e.item.index > current_pos ? 1 : 0,
+                indicator_c = direction ? "next" : "prev",
+                $dots = $(e.currentTarget).find(".owl-dots"),
+                $current_dot = $dots.children().eq(current_pos);
+
+            $current_dot.html('<div class="dot-indicator ' + indicator_c + '">');
+
+            current_pos = e.item.index;
+
+            setTimeout(function() {
+                $current_dot.html("");
+            }, 200);
+        }
+    });
+});

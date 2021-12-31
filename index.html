@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>XXXX - NFT's Landing Page</title>
+    <title>Terracapynft - NFT's Landing Page</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="#" />
@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/variable.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
 
 </head>
 
@@ -55,12 +60,12 @@
                                 <a href="#attributes" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Attributes</a>
                                 <a href="#roadmap" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Roadmap</a>
                                 <a href="#faq" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">FAQs</a>
-                                <a href="#team" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Team</a>
+                                <!-- <a href="#team" class="high panda-btn btn-low pop js-close-menu text-center mb-2 d-block">Team</a> -->
 
                             </div>
                             <a class="navbar-brand" href="index.html">
                                 <!-- <img src="assets/images/logo/white-logo.svg" alt="Logo"> -->
-                                <h1 class="w-100 logo-bawah" style="color: #fff;">XXXXX</h1>
+                                <h1 class="w-100 logo-atas" style="color: #fff;">Terracapy</h1>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
@@ -81,9 +86,9 @@
                                     <li class="nav-item">
                                         <a href="#faq" class="page-scroll" aria-label="Toggle navigation">FAQs</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <a href="#team" aria-label="Toggle navigation">Team</a>
-                                    </li>
+                                    </li> -->
                                     <!-- <li class="nav-item">
                                         <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#submenu-1-4" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">Blog</a>
                                         <ul class="sub-menu collapse" id="submenu-1-4">
@@ -140,16 +145,28 @@
 
     <!-- Start Attributes Area -->
     <section id="attributes" class="attributes section">
-        <img src="/assets/images/hero/hip1.svg" class="hip-attributes">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
                         <h3 class="wow zoomIn" data-wow-delay=".2s">Attributes</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Still Under Development
+                        <h2 class="wow fadeInUp attributes" data-wow-delay=".4s">Most Popular Skin
                         </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">There will be a customisation character</p>
+                        <!-- <p class="wow fadeInUp" data-wow-delay=".6s">Most Popular</p> -->
                     </div>
+                    <div class="row justify-content-center">
+                        <div class="col-11 col-xl-8 position-relative">
+                            <div class="owl-carousel" id="carousel">
+                                <div class="item"><img src="/assets/images/skin/Alien.png" alt="alien" class="img-carousel"></div>
+                                <div class="item"><img src="/assets/images/skin/Diamond.png" alt="diamond" class="img-carousel"></div>
+                                <div class="item"><img src="/assets/images/skin/Gold.png" alt="gold" class="img-carousel"></div>
+                                <div class="item"><img src="/assets/images/skin/Military.png" alt="military" class="img-carousel"></div>
+                                <div class="item"><img src="/assets/images/skin/Red.png" alt="red" class="img-carousel"></div>
+                                <div class="item"><img src="/assets/images/skin/Zombie.png" alt="zombie" class="img-carousel"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -158,7 +175,6 @@
 
     <!-- Start Roadmap Area -->
     <section id="roadmap" class="roadmap section">
-        <img src="/assets/images/hero/hip2.svg" class="hip-roadmap">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -242,23 +258,23 @@
             <div class="row justify-content-center">
                 <div class="col-11 col-xl-6">
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".2s">What is XXXXX?</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".2s">XXXXX is a 6,560 algorithmically generated NFT creation, all hand-drawn and unique to each other. XXXXX are lazy badasses who cuss, and swear at everything.</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".2s">What is Terracapynft?</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".2s">Terracapynft is a 6,560 algorithmically generated NFT creation, all hand-drawn and unique to each other. Terracapynft are lazy badasses who cuss, and swear at everything.</div>
                     </div>
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".25s">How can I be a proud XXXXX owner?</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".25s">You can mint XXXXX on our official website.</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".25s">How can I be a proud Terracapynft owner?</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".25s">You can mint Terracapynft on our official website.</div>
                     </div>
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".3s">How many XXXXX will be available?</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".3s">There will only be 6,560 XXXXX available for eternity.</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".3s">How many Terracapynft will be available?</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".3s">There will only be 6,560 Terracapynft available for eternity.</div>
                     </div>
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".35s">Is every XXXXX unique?</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".35s">They are unique to each other, you won’t find 2 of the same XXXXX ever in this Great Bamboo Forest.</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".35s">Is every Terracapynft unique?</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".35s">They are unique to each other, you won’t find 2 of the same Terracapynft ever in this Great Bamboo Forest.</div>
                     </div>
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".4s">How many attributes will there be in my XXXXX?</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".4s">How many attributes will there be in my Terracapynft?</div>
                         <div class="answer wow fadeInUp" data-wow-delay=".4s">There are a total of 7 Attributes, within 170+ unique traits with different rarity.</div>
                     </div>
                     <div class="faq-item">
@@ -271,16 +287,16 @@
                     </div>
 
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".55s">How many XXXXX can I own?</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".55s">There is no limit on how many XXXXX you can own. However there is a limit on how many XXXXX you can mint per tx.</div>
+                        <div class="question wow fadeInUp" data-wow-delay=".55s">How many Terracapynft can I own?</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".55s">There is no limit on how many Terracapynft you can own. However there is a limit on how many Terracapynft you can mint per tx.</div>
                     </div>
                     <div class="faq-item">
                         <div class="question wow fadeInUp" data-wow-delay=".6s">I have more question</div>
                         <div class="answer wow fadeInUp" data-wow-delay=".6s">Ask them on the <a href="#" target="_blank">general chat</a>, our mods and admins will gladly help.</div>
                     </div>
                     <div class="faq-item">
-                        <div class="question wow fadeInUp" data-wow-delay=".65s">How to mint a XXXXX</div>
-                        <div class="answer wow fadeInUp" data-wow-delay=".65s">Please check our <a href="#">help page on how to mint a XXXXX</a></div>
+                        <div class="question wow fadeInUp" data-wow-delay=".65s">How to mint a Terracapynft</div>
+                        <div class="answer wow fadeInUp" data-wow-delay=".65s">Please check our <a href="#">help page on how to mint a Terracapynft</a></div>
                     </div>
                 </div>
             </div>
@@ -289,22 +305,20 @@
     <!--/ End FAQ Table Area -->
 
     <!-- Team Area -->
-    <section id="team" class="section team">
+    <!-- <section id="team" class="section team">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="cta-content">
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">You are using free Lite <br>Version of Appvilla
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Teams</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Still Under Development
                         </h2>
-                        <p class="wow fadeInUp" data-wow-delay=".4s">Please, purchase full version of the template to get all pages, features and commercial license.</p>
-                        <div class="button wow fadeInUp" data-wow-delay=".6s">
-                            <a href="javascript:void(0)" class="btn">Purchase Now</a>
-                        </div>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">There will be a list of Teams</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Team Area -->
 
     <!-- Start Footer Area -->
@@ -315,9 +329,9 @@
                 <div class="col-11 col-md-4 text-center">
                     <!-- <a href="#"><img src="https://dirtypanda.io/img/logo.png" class="w-100 logo-bawah"></a> -->
                     <a href="#"></a>
-                    <h1 class="w-100 logo-bawah" style="color:#fff">XXXXX</h1>
+                    <h1 class="w-100 logo-bawah" style="color:#fff">Terracapynft</h1>
                     <p>
-                        From the smooth brains of XXXXLabs <br> All Rights Reserved 2021
+                        From the smooth brains of TerracapynftLabs <br> All Rights Reserved 2021
                     </p>
                     <div class="dp-social">
                         <a href="#" class="pop"><img src="/assets/images/logo/social-twitter.svg"></a>
@@ -342,7 +356,6 @@
     <script src="assets/js/tiny-slider.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
         //====== counter up 
@@ -356,7 +369,7 @@
         cu.start();
 
         $(document).ready(function() {
-            dirtyPandaUi();
+            capyBaraUI();
         })
     </script>
 </body>

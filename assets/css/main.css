@@ -153,6 +153,15 @@ img {
     font-weight: 800;
 }
 
+.section-title h2.attributes {
+    font-size: 34px;
+    margin-bottom: 40px;
+    line-height: 42px;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 800;
+}
+
 .section-title p {
     font-size: 15px;
 }
@@ -300,7 +309,7 @@ img {
 
 .button .btn-alt {
     color: #fff!important;
-    background: #000!important;
+    background: #333!important;
     padding: 11px 30px;
 }
 
@@ -368,7 +377,7 @@ img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    background: #ff6b81;
+    background: #3FB2EA;
     -webkit-animation: preloader-fx 1.6s linear infinite;
     animation: preloader-fx 1.6s linear infinite;
 }
@@ -1058,10 +1067,11 @@ img.hip-attributes {
 
 .attributes {
     background-color: white;
+    margin-bottom: 70px;
 }
 
 .attributes .section-title {
-    margin-bottom: 30px;
+    margin: 35px 35px 0 35px;
 }
 
 .attributes .single-feature {
@@ -1115,7 +1125,7 @@ img.hip-attributes {
 
 .roadmap {
     background-color: #fff;
-    /* padding: 40px 30px; */
+    padding: 40px 30px;
     /* background-image: url(/assets/images/hero/bg2.png); */
 }
 
@@ -1202,7 +1212,7 @@ img.hip-faq {
 }
 
 .faq {
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     padding: 80px 0 50px 0;
     background-size: cover;
     background-image: url(/assets/images/hero/bg3.png);
@@ -1319,7 +1329,7 @@ img.hip-faq {
 ========================================*/
 
 .team {
-    background-color: #ff6b81;
+    background-color: #FFF;
     padding: 40px 30px;
 }
 
@@ -1498,6 +1508,22 @@ img.hip-faq {
         padding: 60px 0;
         padding-top: 20px;
     }
+}
+
+.logo-atas {
+    transition: all 0.1s ease-in-out;
+}
+
+h1.logo-atas {
+    font-size: 38px;
+}
+
+.logo-atas:hover {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+.logo-atas:active {
+    transform: scale(1.035) rotate(-2deg);
 }
 
 .logo-bawah {
@@ -1889,4 +1915,242 @@ img.hip-roadmap {
 
 .mobile-menu.active {
     transform: translate(0, 0);
+}
+
+
+/* CAROUSEL ATTRIBUTES */
+
+#carousel {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 32px;
+    color: #4DB6AC;
+    box-shadow: 20px 20px 0 0 #B2DFDB, 40px 40px 0 0 #80CBC4;
+}
+
+.item {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-item:nth-child(1) {
+    background: #fffbc9;
+}
+
+.owl-item:nth-child(2) {
+    background: #FFF9C4;
+}
+
+.owl-item:nth-child(3) {
+    background: #FFF59D;
+}
+
+.owl-item:nth-child(4) {
+    background: #a7a378;
+}
+
+.owl-item:nth-child(5) {
+    background: #FFF9C4;
+}
+
+.owl-item:nth-child(6) {
+    background: #FFF59D;
+}
+
+.owl-nav {
+    position: absolute;
+    height: 0;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+}
+
+.owl-nav [class^=owl] {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #4DB6AC;
+    position: absolute;
+    top: -12px;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.owl-nav [class^=owl]:after {
+    content: "";
+    display: block;
+    border: 6px solid transparent;
+    position: absolute;
+    top: calc(50% - 6px);
+    transition: opacity 0.2s ease 0.2s;
+}
+
+.owl-nav [class^=owl].disabled {
+    transform: scale(0);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.owl-nav [class^=owl].disabled:after {
+    opacity: 0;
+}
+
+.owl-nav> :first-child {
+    left: 0;
+}
+
+.owl-nav> :first-child:after {
+    left: calc(50% - 9px);
+    border-right-color: white;
+}
+
+.owl-nav> :last-child {
+    right: 0;
+}
+
+.owl-nav> :last-child:after {
+    right: calc(50% - 9px);
+    border-left-color: white;
+}
+
+.owl-dots {
+    text-align: center;
+    line-height: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
+
+.owl-dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+
+.owl-dot+.owl-dot {
+    margin-left: 12px;
+}
+
+.owl-dot:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #4DB6AC;
+    transform: scale(0.25);
+    transition: transform 0.3s ease;
+}
+
+.owl-dot.active:after {
+    transition-delay: 0.2s;
+    transform: scale(1);
+}
+
+.dot-indicator {
+    width: 24px;
+    height: 2px;
+    background: #4DB6AC;
+    position: absolute;
+    top: calc(50% - 1px);
+    transform: scaleX(0);
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.dot-indicator.next {
+    left: 50%;
+    -webkit-animation-name: dot-indicator-next;
+    animation-name: dot-indicator-next;
+}
+
+.dot-indicator.prev {
+    right: 50%;
+    -webkit-animation-name: dot-indicator-prev;
+    animation-name: dot-indicator-prev;
+}
+
+@-webkit-keyframes dot-indicator-next {
+    0%,
+    100% {
+        transform: scaleX(0);
+    }
+    0%,
+    60% {
+        transform-origin: left;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    60.1%,
+    100% {
+        transform-origin: right;
+    }
+}
+
+@keyframes dot-indicator-next {
+    0%,
+    100% {
+        transform: scaleX(0);
+    }
+    0%,
+    60% {
+        transform-origin: left;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    60.1%,
+    100% {
+        transform-origin: right;
+    }
+}
+
+@-webkit-keyframes dot-indicator-prev {
+    0%,
+    100% {
+        transform: scaleX(0);
+    }
+    0%,
+    60% {
+        transform-origin: right;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    60.1%,
+    100% {
+        transform-origin: left;
+    }
+}
+
+@keyframes dot-indicator-prev {
+    0%,
+    100% {
+        transform: scaleX(0);
+    }
+    0%,
+    60% {
+        transform-origin: right;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    60.1%,
+    100% {
+        transform-origin: left;
+    }
+}
+
+.img-carousel {
+    top: -35px;
+    position: relative;
 }
